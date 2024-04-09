@@ -13,7 +13,9 @@ function App() {
         await web3.eth.sendTransaction({
             from: account,
             to: e.target.received.value,
-            value: web3.utils.toWei(e.target.amount.value, 'ether')
+            value: web3.utils.toWei(e.target.amount.value, 'ether'),
+            gasLimit: 21000,
+            gasPrice: 20,
         });
     };
  
