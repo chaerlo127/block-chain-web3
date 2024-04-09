@@ -22,7 +22,7 @@ function App() {
             // web3? 문법
             // web3가 null 값이라면 undefined를 반환해준다.
             const balance = await web3?.eth.getBalance(account);
-            setBalance(balance / 10 ** 18);
+            setBalance(Number (balance) / 10 ** 18);
         };
  
         if (account) setIsLogin(true);
