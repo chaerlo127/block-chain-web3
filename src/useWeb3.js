@@ -65,7 +65,7 @@ const useWeb3 = () => {
                 // web3 라이브러리를 메타마스크에 연결 (맵핑)
                 // const web3 = new Web3(window.ethereum);
                 // 직접 바로 보내고 싶을 때, 
-                const web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:8545'));
+                const web3 = new Web3(new Web3.providers.HttpProvider('http://0.0.0.0:8545'));
                 setAccount(accounts);
                 setWeb3(web3);
             } catch (e) {
